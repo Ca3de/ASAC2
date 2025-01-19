@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Saints Anglican Church – Calendar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Christian_cross.svg/48px-Christian_cross.svg.png" alt="Church Logo" />
+        <h1>All Saints Anglican Church</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a class="active" href="calendar.html">Calendar</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="page-header">
+      <h2>Church Calendar</h2>
+    </section>
+
+    <section class="page-content">
+      <p>Stay up to date with our events and services.</p>
+      <!-- Embed Google Calendar (Public Calendar Embed URL) -->
+      <iframe 
+        src="https://calendar.google.com/calendar/embed?src=YOUR_PUBLIC_GOOGLE_CALENDAR_URL&ctz=YOUR_TIMEZONE" 
+        style="border: 0" 
+        width="800" 
+        height="600" 
+        frameborder="0" 
+        scrolling="no">
+      </iframe>
+      <p>
+        Or <a href="https://calendar.google.com/" target="_blank">click here</a> to view on Google Calendar.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-info">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a><br>
+          <strong>Email:</strong> <a href="mailto:info@allsaintsanglican.org">info@allsaintsanglican.org</a>
+        </p>
+        <p>For prayer requests or inquiries, please call or email us.</p>
+      </div>
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; <span id="year"></span> All Saints Anglican Church. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
