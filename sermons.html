@@ -34,34 +34,21 @@
     </section>
 
     <section class="page-content">
-      <p>
-        Watch our most recent sermons on YouTube.
-      </p>
-      <!-- Single Video Embed Example -->
-      <div class="video-embed">
-        <iframe 
-          width="560" 
-          height="315"
-          src="https://www.youtube.com/embed/VIDEO_ID" 
-          title="Latest Sermon" 
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <p>Watch our latest sermons. The video below is automatically fetched from our YouTube channel.</p>
 
-      <!-- OR you can embed a Playlist directly -->
-      <div class="video-embed">
-        <iframe 
-          width="560" 
+      <div id="sermon-video-container">
+        <!-- Fallback / default video if the fetch fails -->
+        <iframe
+          id="sermon-video"
+          width="560"
           height="315"
-          src="https://www.youtube.com/embed?listType=playlist&list=YOUR_PLAYLIST_ID" 
-          title="Sermon Playlist" 
+          src="https://www.youtube.com/embed/YOUR_FALLBACK_VIDEO_ID"
+          title="YouTube Sermon"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+          allowfullscreen
+        ></iframe>
       </div>
+      <p class="sermon-date" id="sermon-date">Date: (will update dynamically)</p>
     </section>
   </main>
 
